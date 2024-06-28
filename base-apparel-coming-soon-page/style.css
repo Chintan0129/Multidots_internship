@@ -1,0 +1,197 @@
+/* Importing the Josefin Sans font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+/* common styling */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Setting the font for the entire body */
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+}
+
+/* Styling for the header section */
+.header {
+  position: absolute;
+  height: auto;
+  width: 100%;
+  padding: 30px;
+}
+/* Styling for logo */
+.header img {
+  width: 150px;
+}
+
+/* Styling for the hero banner section(main content) */
+.hero-banner {
+  padding-top: 100px;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: linear-gradient(
+    135deg,
+    hsl(0, 0%, 100%),
+    hsl(0, 100%, 98%)
+  );
+  padding-bottom: 50px;
+}
+
+/* Styling for the left section within the hero banner */
+.hero-banner__left {
+  width: 100%;
+  padding: 50px 30px 0 30px;
+}
+.hero-banner__title {
+  letter-spacing: 0.5rem;
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: hsl(0, 36%, 70%);
+  line-height: 3.5rem;
+}
+.hero-banner__title span {
+  color: hsl(0, 6%, 24%);
+  font-weight: 700;
+}
+.hero-banner__text {
+  max-width: 450px;
+  text-align: center;
+  color: hsl(0, 36%, 70%);
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  margin: 20px auto 40px auto;
+}
+
+/* Styling for the right section within the hero banner */
+.hero-banner__right {
+  width: 100%;
+  height: 300px;
+  background-image: url(./images/hero-mobile.jpg);
+  background-size: cover;
+}
+.hero-banner__right img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Styling for the form within the hero banner left section (email input) */
+.hero-banner__form {
+  position: relative;
+  display: block;
+  height: 50px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.hero-banner__input {
+  position: absolute;
+  width: 100%;
+  outline: none;
+  border: 1px solid hsl(0, 36%, 70%);
+  height: 100%;
+  border-radius: 50px;
+  padding-left: 30px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.1rem;
+}
+
+.hero-banner__submit {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  border: none;
+  outline: none;
+  color: white;
+  width: 70px;
+  height: 100%;
+  border-radius: 50px;
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  box-shadow: 0px 0px 18px 1px #f4aaab82;
+  transition: 0.3s ease box-shadow;
+}
+.hero-banner__submit:hover {
+  background-image: linear-gradient(
+    135deg,
+    hsl(0, 80%, 86%),
+    hsla(0, 52%, 80%, 0.781)
+  );
+  box-shadow: 0px 0px 13px 2px #f4aaabbf;
+}
+.hero-banner__input::placeholder {
+  color: hsl(0, 36%, 70%);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+.hero-banner__error-icon {
+  display: inline-block;
+  position: absolute;
+  right: 85px;
+  top: 24%;
+  display: none;
+}
+.hero-banner__error-text {
+  position: absolute;
+  color: hsl(0, 93%, 68%);
+  left: 30px;
+  top: 60px;
+  font-size: 1rem;
+  display: none;
+}
+.hero-banner__form.error .hero-banner__error-icon,
+.hero-banner__form.error .hero-banner__error-text {
+  display: block;
+}
+.hero-banner__form.error .hero-banner__input {
+  border: 2px solid hsl(0, 93%, 68%);
+}
+
+/* responsiveness on screen size above tablet */
+@media only screen and (min-width: 769px) {
+  .header {
+    padding-left: 10%;
+  }
+  .hero-banner {
+    padding-top: 0;
+    flex-direction: row;
+    padding-bottom: 0;
+  }
+  .hero-banner__right {
+    width: 80%;
+    height: 100vh;
+    background-image: url(./images/hero-desktop.jpg);
+  }
+  .hero-banner__left {
+    padding-top: 28vh;
+    width: 100%;
+    height: 100vh;
+    padding-left: 10%;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-size: cover;
+    background-position: center;
+  }
+  .hero-banner__title {
+    text-align: left;
+    font-size: 5rem;
+    line-height: 5.5rem;
+  }
+  .hero-banner__text {
+    margin-left: 0;
+    text-align: left-container;
+    font-size: 1.1rem;
+  }
+  .hero-banner__form {
+    margin-left: 0;
+  }
+  .hero-banner__submit {
+    width: 80px;
+  }
+}

@@ -1,0 +1,119 @@
+.custom-faq-block {
+	padding: 20px;
+	background: #f9f9f9;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+.placeholder {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 150px;
+	background: #fff;
+	border: 2px dashed #ddd;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 4px;
+}
+
+.placeholder .plus-icon-button {
+	font-size: 24px;
+	background: #007cba;
+	color: #fff;
+	border: none;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.filters-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+.filter-section {
+	margin-bottom: 20px;
+}
+
+.filter-section h2 {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.filter-checkbox {
+	margin-bottom: 5px;
+}
+
+.faq-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.faq-item {
+	margin-bottom: 10px;
+}
+
+.faq-checkbox {
+	margin-bottom: 5px;
+}
+
+.next-button,
+.done-button,
+.edit-button {
+	margin-top: 20px;
+}
+
+.selected-faq-list {
+	list-style: none;
+	padding: 0;
+	margin: 20px 0 0;
+}
+
+.selected-faq-list .faq-item {
+	padding: 10px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+
+.question-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.selected-faq-list .question {
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+
+.selected-faq-list .answer {
+	font-size: 14px;
+	margin-top: 5px;
+	display: none;
+}
+
+.selected-faq-list .answer.visible {
+	display: block;
+}
+
+.delete-button {
+	margin-top: 20px;
+	background: #d63638;
+	color: #fff;
+	border: none;
+}
+
+.toggle-icon {
+	margin-left: 10px;
+}

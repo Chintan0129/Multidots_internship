@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Interactive pricing component|Chintan</title>
+  </head>
+
+  <body>
+    <main>
+    <section class="container">
+      <h1>Simple, traffic-based pricing</h1>
+      <p class="title2">
+        Sign-up for our 30-day trial. No credit card required.
+      </p>
+      <main class="main">
+        <div class="main__top-section padding">
+          <p class="main__pageviews">100K Pageviews</p>
+
+          <div class="range">
+            <input
+              type="range"
+              min="0"
+              max="100"
+              step="25"
+              value="50"
+              id="second__range"
+              class="input__range"
+            />
+            <div class="value2">0</div>
+          </div>
+
+          <p class="main__month">
+            <span class="main__price" id="total-price">16.00</span> month
+          </p>
+        </div>
+        <div class="main__middle padding">
+          <p>Monthly Billing</p>
+          <input type="checkbox" id="toggle" />
+          <label for="toggle" class="toggle--period"></label>
+
+          <p>
+            Yearly Billing <span class="discount--mobile">25%</span>
+            <span class="discount--desktop">25% discount</span>
+          </p>
+        </div>
+
+        <div class="main__bottom padding">
+          <ul>
+            <li> &#10004 Unlimited websites</li>
+            <li> &#10004 100% data ownership</li>
+            <li> &#10004 Email reports</li>
+          </ul>
+
+          <button class="main__btn">Start my trial</button>
+        </div>
+      </main>
+    </section>
+  </main>
+    <script src="script.js"></script>
+  </body>
+</html>

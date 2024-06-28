@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --BrightYellow: hsl(71, 73%, 54%);
+  --LightGray: hsl(204, 43%, 93%);
+  --GrayishBlue: hsl(218, 22%, 67%);
+}
+
+ul {
+  list-style: none;
+}
+.btn {
+  background-color: var(--BrightYellow);
+  color: white;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+}
+.main-container {
+  background-color: white;
+  border-radius: 0.625rem;
+}
+
+body {
+  font-family: "Karla", Sans-Serif;
+  font-size: 16px;
+  background-color: var(--LightGray);
+  padding: 0.625rem 1.25rem;
+}
+
+p.green {
+  color: var(--BrightYellow);
+  font-weight: 700;
+}
+.main-container > article:first-child {
+  padding: 2rem;
+}
+.main-container > article:first-child h1 {
+  color: var(--Cyan);
+  margin-bottom: 1rem;
+  font-size: 24px;
+}
+.main-container > article:first-child p {
+  margin-bottom: 1rem;
+  font-size: 18px;
+}
+.main-container > article:first-child p:last-child {
+  color: var(--GrayishBlue);
+  font-size: 16px;
+}
+.main-container .sub-container {
+  display: flex;
+  flex-direction: column;
+}
+.main-container section article {
+  padding: 2rem;
+  color: white;
+}
+.main-container section article:first-child {
+  background-color: var(--Cyan);
+}
+.main-container section article:last-child {
+  background-color: hsl(179, 62%, 49%);
+  border-bottom-left-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+}
+.main-container section article:first-child h2 {
+  margin-bottom: 1rem;
+  font-size: 18px;
+}
+.main-container section article:first-child h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.main-container section article:first-child h3 span {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-right: 1rem;
+}
+.main-container section article:first-child p {
+  margin: 1rem 0;
+}
+.main-container section article:last-child h2 {
+  margin-bottom: 1rem;
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  .main-container {
+    width: 700px;
+    margin: auto;
+  }
+  .main-container > article:first-child h1 {
+    font-size: 24px;
+  }
+
+  .main-container .sub-container {
+    flex-direction: row;
+  }
+  .main-container section article:first-child {
+    flex: 1;
+    border-bottom-left-radius: 0.625rem;
+  }
+  .main-container section article:last-child {
+    flex: 1;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0.625rem;
+  }
+}

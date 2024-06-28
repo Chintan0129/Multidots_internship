@@ -1,0 +1,39 @@
+.portfolio-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 20px;
+}
+
+.portfolio-item {
+	border: 1px solid #ccc;
+	padding: 20px;
+	border-radius: 5px;
+	background-color: #fff;
+}
+
+.portfolio-item h2 {
+	margin-top: 0;
+}
+
+.portfolio-thumbnail img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 5px;
+}
+
+.portfolio-content {
+	margin-top: 10px;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.read-more {
+	display: block;
+	margin-top: 10px;
+	color: #0073aa;
+	text-decoration: none;
+}
+
+.read-more:hover {
+	text-decoration: underline;
+}

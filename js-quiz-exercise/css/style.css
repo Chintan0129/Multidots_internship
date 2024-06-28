@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "lato";
+  src: url(./Lato-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "lato";
+  src: url(./Lato-Bold.ttf);
+  font-weight: 600;
+}
+body {
+  background-color: rgb(237, 232, 227);
+  font-family: "lato";
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  gap: 17px;
+  justify-content: center;
+}
+.header h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #333673;
+}
+.header img {
+  height: 34px;
+  margin-top: 25px;
+}
+hr {
+  width: 90%;
+}
+.mcq {
+  width: 80%;
+  margin-left: 90px;
+}
+.question {
+  font-size: 20px;
+  font-weight: 400;
+}
+.option {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer {
+  margin-top: 50px;
+  height: 250px;
+  color: white;
+  background-color: #f4f3f6;
+}
+
+.footer input {
+  display: inline-block;
+  color: aliceblue;
+  position: relative;
+  left: 40%;
+  top: 10px;
+  width: 150px;
+  background-color: #747475;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  margin-right: 50px;
+}
+
+.footer p {
+  text-align: center;
+  color: #191d63;
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 20px;
+}
+.wrong-option {
+  /* background-color: red; */
+  accent-color: red;
+}
+.correct-option {
+  /* background-color: rgb(119, 250, 82); */
+  accent-color: rgb(119, 250, 82);
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    justify-content: center;
+  }
+  .header h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333673;
+  }
+  .header img {
+    height: 34px;
+    margin-top: 25px;
+  }
+  hr {
+    width: 90%;
+  }
+  .mcq {
+    min-width: 100%;
+    margin-left: 10px;
+  }
+  .question {
+    font-size: 10px;
+  }
+  label {
+    font-size: 10px;
+  }
+
+  .footer {
+    margin-top: 50px;
+    height: 250px;
+    min-width: 100%;
+    background-color: rgb(237, 232, 227);
+  }
+
+  .footer input {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    width: 50px;
+    left: 30%;
+    top: 30%;
+    background-color: rgb(88, 88, 88);
+  }
+
+  .footer p {
+    font-size: 10px;
+    font-weight: 600;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1025px) {
+  .footer input {
+    width: 80px;
+    left: 400px;
+    top: 10px;
+  }
+}

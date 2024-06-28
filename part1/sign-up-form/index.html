@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="./imgs/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <title>sign-up-form</title>
+</head>
+<body>
+  <main>
+    <div class="container">
+
+      <div class="flex-container">
+
+        <div class="about py">
+          <h1 class="mb">Learn to code by watching others</h1>
+          <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable. </p>
+        </div>
+
+        <div class="signup-container py">
+
+          <div class="trial-bar shadow mb">
+            <p><span class="extra-bold">Try it free for 7 days </span class="thin">then $20/mo. thereafter</p>
+          </div>
+
+          <div class="form-container mb">
+            <form class="form" id="form">
+              <div class="form-control mb">
+                <label for="firstname" class="offscreen">First Name</label>
+                <input type="text" name="firstName" title="firstName" placeholder="First Name" class="input" id="firstname">
+                <img src="./imgs/icon-error.svg" alt="error image" class="hidden">
+              </div>
+              <small class="err-message hidden">error message</small> 
+
+              <div class="form-control mb">
+                <label for="lastname" class="offscreen">Last Name</label>
+                <input type="text" name="lastName" title="lastName" placeholder="Last Name" class="input" id="lastname">
+                <img src="./imgs/icon-error.svg" alt="error image" class="hidden">
+              </div>
+              <small class="err-message hidden">error message</small> 
+
+              <div class="form-control mb">
+                <label for="email" class="offscreen">Email Address</label>
+                <input type="email" name="email" title="email" placeholder="Email Address" class="input" id="email">
+                <img src="./imgs/icon-error.svg" alt="error image" class="hidden">
+              </div>
+              <small class="err-message hidden">error message</small> 
+
+              <div class="form-control mb">
+                <label for="password" class="offscreen">Password</label>
+                <input type="password" name="password" title="password" placeholder="Password" class="input" id="password">
+                <img src="./imgs/icon-error.svg" alt="error image" class="hidden">
+              </div>
+              <small class="err-message hidden">error message</small> 
+               
+              <button type="submit" name="submit" title="submit" class="btn uppercase shadow mb">claim your free trial</button>
+
+              <small class="thin gray-text">By clicking the button you are agreeing to our <a href="#" class="red-text">Terms and Services</a></small>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+  <script src="app.js "></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Element-drag-drop-game|Chintan</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <script src="./jquery/jquery-3.7.1.min.js"></script>
+    <!-- Import jquery UI library -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <h1>Element Drag And Drop Game</h1>
+    </header>
+    <!-- main container -->
+    <main>
+      <div id="container">
+        <div id="drag__number-slots"></div>
+        <div id="drop__number-slots"></div>
+
+        <div id="winMsg">
+          <p>Hurray!!you won the CardGame.</p>
+          <button onclick="begin()">Reset Game</button>
+        </div>
+        <div id="score"></div>
+        <div id="time"></div>
+        <div id="lossMsg">
+          <p>You loss the CardGame, time is up.</p>
+          <button onclick="begin()">Play Again</button>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="./jquery/script.js"></script>
+</html>

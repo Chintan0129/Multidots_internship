@@ -1,0 +1,70 @@
+{
+	"apiVersion": 2,
+	"name": "create-block/staticblock",
+	"title": "Static Block",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "A static block example.",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"heading": {
+			"type": "string",
+			"source": "html",
+			"selector": "h1"
+		},
+		"subheading": {
+			"type": "string",
+			"source": "html",
+			"selector": "h5"
+		},
+		"paragraph": {
+			"type": "string",
+			"source": "html",
+			"selector": "p"
+		},
+		"cards": {
+			"type": "array",
+			"default": [],
+			"source": "query",
+			"selector": ".card",
+			"query": {
+				"imageUrl": {
+					"type": "string",
+					"source": "attribute",
+					"attribute": "src",
+					"selector": "img"
+				},
+				"cardHeading": {
+					"type": "string",
+					"source": "html",
+					"selector": "h3"
+				},
+				"cardSubheading": {
+					"type": "string",
+					"source": "html",
+					"selector": "h4"
+				},
+				"cardDescription": {
+					"type": "string",
+					"source": "html",
+					"selector": ".card-description"
+				},
+				"cardHeadingColor": {
+					"type": "string",
+					"default": ""
+				},
+				"cardSubheadingColor": {
+					"type": "string",
+					"default": ""
+				}
+			}
+		},
+		"paragraphColor": {
+			"type": "string",
+			"default": "black"
+		}
+	},
+	"editorScript": "file:./index.js"
+}

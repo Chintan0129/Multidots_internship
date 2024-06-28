@@ -1,0 +1,195 @@
+/*
+Theme Name: porfolio_exercise
+Theme URI: https://wordpress.org/themes/portfolio_exercise
+Author: the WordPress team
+Author URI: https://wordpress.org
+Description: this is my wordpress exercise.
+Requires at least: 6.1
+Tested up to: 6.5
+Requires PHP: 5.6
+Version: 1.4
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+Text Domain: portfolio_exercise
+*/
+
+/* Header styling */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Title styling */
+.header-content h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Count styling */
+.header-content p {
+  font-size: 24px;
+  margin: 0;
+  color: #ffffff;
+}
+
+/* Footer styling */
+footer {
+  background-color: #5ea7f1;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 24px;
+  color: #f20030;
+}
+
+/* Grid Layout for Portfolios Front Page */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 20px;
+  margin-bottom: 150px;
+}
+
+.portfolio-item {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 35px;
+  margin: 10px;
+}
+
+.featured-image {
+  margin-bottom: 15px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.portfolio-item h2 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+.portfolio-item .taxonomy {
+  margin-top: 5px;
+  font-size: 0.9em;
+  text-decoration: none;
+  color: #ff8308;
+}
+
+.portfolio-item .taxonomy a {
+  text-decoration: none;
+  color: #e26506;
+}
+
+.portfolio-item .taxonomy p {
+  margin: 5px 0;
+  color: #e26506;
+}
+
+/* Pagination styling */
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 60px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.pagination .page-numbers {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #f9f9f9;
+}
+
+.pagination .page-numbers.current {
+  background-color: #337ab7;
+  color: #fff;
+  border-color: #337ab7;
+}
+.search-results {
+  margin-bottom: 100px;
+}
+
+.search-results-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* Single Portfolio Item styling */
+.single-portfolio-item {
+  margin-bottom: 180px;
+}
+
+.single-portfolio-content {
+  display: flex;
+}
+
+.single-portfolio-thumbnail {
+  flex: 0 0 50%;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.single-portfolio-thumbnail img {
+  width: 100%;
+  height: 50%;
+  object-fit: contain;
+}
+
+.single-portfolio-details {
+  flex: 1;
+}
+
+.single-portfolio-details h2 {
+  margin-top: 0;
+  color: blue;
+}
+
+.single-portfolio-content-body {
+  margin-bottom: 10px;
+}
+
+.single-portfolio-taxonomy {
+  font-size: 0.9em;
+  color: #888;
+  text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-content h1 {
+    font-size: 20px;
+  }
+  .header-content p {
+    font-size: 16px;
+  }
+}

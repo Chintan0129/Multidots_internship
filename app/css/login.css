@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../star.jpg");
+  background-size: cover;
+  font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: rgb(245, 245, 245);
+}
+
+.container {
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 30px;
+  background-color: rgb(244, 244, 244);
+  height: fit-content;
+  max-width: 600px;
+  margin: auto;
+}
+
+td {
+  padding: 5px;
+}
+
+label,
+p {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+ul {
+  position: relative;
+  left: 20px;
+  top: 20px;
+  float: left;
+  font-weight: 700;
+  color: red;
+}
+
+button {
+  color: red;
+  padding: 0%;
+  background-color: bisque;
+  font-size: 18px;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: grey;
+  color: white;
+  box-shadow: 5px 5px 5px black;
+}
+
+/* Media queries */
+@media (max-width: 600px) {
+  form {
+    height: fit-content;
+    margin: 40px;
+  }
+  .container {
+    padding: 20px;
+  }
+  label {
+    font-size: 10px;
+  }
+  td {
+    padding: 0px;
+  }
+  p {
+    font-size: 10px;
+  }
+  button {
+    width: 80px;
+    height: 40px;
+  }
+  ul {
+    font-size: 10px;
+  }
+}

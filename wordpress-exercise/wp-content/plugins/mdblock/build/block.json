@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/mdblock",
+  "version": "0.1.0",
+  "title": "Mdblock",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Dynamic block fetching questions and answers based on selected category and tag.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "mdblock",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./style.scss",
+  "attributes": {
+    "selectedCategory": {
+      "type": "string",
+      "default": ""
+    },
+    "selectedTag": {
+      "type": "string",
+      "default": ""
+    },
+    "questionsAndAnswers": {
+      "type": "array",
+      "default": []
+    }
+  }
+}

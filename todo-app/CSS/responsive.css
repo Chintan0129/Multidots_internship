@@ -1,0 +1,31 @@
+@media screen and (max-width: 768px) {
+  .main {
+    width: 100% !important;
+    height: 90vh;
+    margin: auto 1.8rem;
+  }
+  .body-task .task-footer {
+    height: 52px;
+    position: relative;
+  }
+  body .main .body-task .task-footer .container {
+    position: absolute;
+    top: calc(52px + 1.2rem);
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    background-color: #fafafa;
+    border-radius: 4px;
+  }
+  body.theme .body-task .task-footer .container {
+    background-color: #292b3d;
+  }
+
+  .drag-drop {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 2rem;
+  }
+}

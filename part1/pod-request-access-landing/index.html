@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Pod-Request-Access-Landing-Page|Chintan Shah</title>
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <div class="logo__container">
+          <img src="./assets/desktop/logo.svg" alt="Logo" />
+        </div>
+      </header>
+
+      <!-- Main -->
+      <main>
+        <div class="hero__banner">
+          <h1>Publish your podcasts<span> everywhere.</span></h1>
+          <p>
+            Upload your audio to Pod with a single click. We’ll then distribute
+            your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket
+            Casts and more!
+          </p>
+        </div>
+        <div class="social__icons">
+          <img class="spotify" src="./assets/desktop/spotify.svg" alt="" />
+          <img class="apple" src="./assets/desktop/apple-podcast.svg" alt="" />
+          <img
+            class="google"
+            src="./assets/desktop/google-podcasts.svg"
+            alt=""
+          />
+          <img class="pocket" src="./assets/desktop/pocket-casts.svg" alt="" />
+        </div>
+
+        <form>
+          <label for="email">
+            <input
+              type="email"
+              name="email"
+              class="submitbutton"
+              required
+              placeholder="Email address"
+            />
+            <span class="error_msg">Oops! Please check your email</span>
+          </label>
+          <input type="submit" value="Request access" />
+        </form>
+      </main>
+      <footer>
+        <img src="./assets/desktop/bg-pattern-dots.svg" alt="" />
+      </footer>
+    </div>
+
+    <!-- JS link -->
+    <script src="./script.js"></script>
+  </body>
+</html>

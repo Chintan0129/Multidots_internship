@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(211, 255, 114, 0.8);
+  font-family: "Times New Roman", Times, serif;
+  line-height: 5px;
+  padding: 30px;
+  align-items: center;
+  overflow: hidden;
+}
+header h1 {
+  text-align: center;
+  margin: auto;
+  font-size: 40px;
+  color: rgb(246, 64, 4);
+}
+
+#container {
+  padding: 75px;
+  margin: auto;
+}
+
+#drag__number-slots {
+  font-size: 20px;
+  margin: 0 auto;
+  background: rgb(238, 89, 246);
+}
+
+#drop__number-slots {
+  background: rgb(53, 177, 239);
+  padding: 50px;
+  margin: 70px auto;
+  font-size: 20px;
+}
+
+#drop__number-slots,
+#drag__number-slots {
+  margin: 100px auto;
+  width: 1100px;
+  height: 150px;
+  border: 4px solid #360ec8;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+#drop__number-slots div {
+  border-style: dotted;
+}
+
+#drop__number-slots div,
+#drag__number-slots div {
+  float: inline-start;
+  background: #fff;
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 85px;
+  height: 78px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+#drag__number-slots div {
+  border: 3px solid black;
+  background: #939292;
+  color: #fff;
+}
+
+#winMsg {
+  position: absolute;
+  background: rgb(227, 226, 227);
+  border: 2px solid #333;
+  border-radius: 30px;
+  padding: 60px;
+  margin: 50px;
+  left: 250px;
+  color: #131111;
+  font-size: 25px;
+  font-weight: 700;
+  z-index: 1000;
+}
+
+#score {
+  position: absolute;
+  left: 500px;
+  width: 500px;
+  top: 100px;
+  color: #131111;
+  font-size: 40px;
+  font-weight: 700;
+  margin: auto;
+  text-align: center;
+}
+#time {
+  position: absolute;
+  left: 500px;
+  width: 500px;
+  top: 150px;
+  color: #131111;
+  font-size: 40px;
+  font-weight: 700;
+  margin: auto;
+  text-align: center;
+}
+#winMsg button {
+  position: relative;
+  left: 10px;
+  top: 50px;
+  background-color: aqua;
+  color: #131111;
+  padding: 10px;
+  font-weight: 900;
+  border-radius: 25px;
+  box-shadow: 5px 5px rgb(42, 42, 48);
+}
+#winMsg button:hover {
+  background-color: rgb(255, 0, 0);
+  color: #fff;
+}
+#lossMsg {
+  position: absolute;
+  background: rgb(227, 226, 227);
+  border: 2px solid #333;
+  border-radius: 30px;
+  padding: 60px;
+  margin: 50px;
+  left: 250px;
+  color: #131111;
+  font-size: 25px;
+  font-weight: 700;
+  z-index: 1000;
+}
+#lossMsg button {
+  position: relative;
+  left: 10px;
+  top: 50px;
+  background-color: aqua;
+  color: #131111;
+  padding: 10px;
+  font-weight: 900;
+  border-radius: 25px;
+  box-shadow: 5px 5px rgb(42, 42, 48);
+}
+#lossMsg button:hover {
+  background-color: rgb(255, 0, 0);
+  color: #fff;
+}

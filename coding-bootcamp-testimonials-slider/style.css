@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  background-image: url(images/pattern-curve.svg), url(images/pattern-bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left, 87% 45%;
+}
+
+/* Setting the main section width and alignments */
+main {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Styling the slide alignment */
+.hero-banner-john,
+.hero-banner-tanya {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+/* Adding the hidden class to john slide */
+.hidden {
+  display: none !important;
+}
+
+/* Added style for left side description part */
+.hero-content {
+  width: 635px;
+  height: 354px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  background-image: url(images/pattern-quotes.svg);
+  background-repeat: no-repeat;
+  background-position: 18% top;
+  background-size: 100px;
+}
+
+.hero-content p {
+  padding-top: 27px;
+  width: 100%;
+  line-height: 44px;
+  font-weight: 300;
+  color: hsl(240, 38%, 20%);
+}
+
+.hero-content__info {
+  margin-top: 1rem;
+}
+
+.hero-content__info span:nth-child(1) {
+  font-size: 20px;
+  line-height: 38px;
+  font-weight: 700;
+  color: hsl(240, 38%, 20%);
+}
+
+.hero-content__info span:nth-child(2) {
+  font-size: 20px;
+  line-height: 38px;
+  font-weight: 500;
+  color: hsl(240, 18%, 77%);
+}
+
+/* Style for right side image and button part */
+.hero-profile {
+  position: relative;
+}
+
+.hero-profile img {
+  border-radius: 10px;
+  margin-left: -66px;
+}
+
+.hero-profile .hero-profile__nav-btn {
+  position: absolute;
+  height: 56px;
+  width: 112px;
+  display: flex;
+  background: #fff;
+  border-radius: 28px;
+  box-shadow: 0px 15px 20px -10px hsl(240, 38%, 20%);
+  bottom: -17px;
+}
+
+.hero-profile__nav-btn .hero-profile__prev-btn,
+.hero-profile__nav-btn .hero-profile__next-btn {
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-size: 30%;
+  background-position: center;
+  width: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.hero-profile__nav-btn .hero-profile__prev-btn {
+  background-image: url(images/icon-prev.svg);
+  border-radius: 30px 0 0 30px;
+}
+
+.hero-profile__nav-btn .hero-profile__next-btn {
+  background-image: url(images/icon-next.svg);
+  border-radius: 0 30px 30px 0;
+}
+
+/* Media Screen for mobile and upto the sixe of 767px */
+@media screen and (max-width: 767px) {
+  body {
+    background-size: 80%, 326px;
+    background-position: bottom left, center 22%;
+  }
+
+  main {
+    width: 90%;
+  }
+
+  .hero-banner-tanya,
+  .hero-banner-john {
+    flex-direction: column-reverse;
+  }
+
+  .hero-content {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin-top: 2.5rem;
+    background-position: top;
+    background-size: 60px;
+  }
+
+  .hero-content p {
+    width: 92.11%;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .hero-content__info {
+    margin-top: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content__info span:nth-child(1) {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .hero-content__info span:nth-child(2) {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .hero-profile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-profile img {
+    width: 254px;
+    height: 100%;
+    margin-left: 0;
+  }
+
+  .hero-profile .hero-profile__nav-btn {
+    height: 40px;
+    width: 80px;
+    bottom: -15px;
+  }
+}
+
+/*  Media Screen for Table and upto the sixe of 930px for responsiveness */
+@media screen and (min-width: 767px) and (max-width: 930px) {
+  body {
+    background-size: 80%, 60%;
+    background-position: bottom left, 100% 70%;
+  }
+
+  .hero-content p {
+    width: 417px;
+  }
+
+  .hero-profile img {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  .hero-profile .hero-profile__nav-btn {
+    height: 40px;
+    width: 70px;
+    bottom: -9px;
+    left: 10%;
+  }
+}

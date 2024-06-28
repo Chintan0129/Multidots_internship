@@ -1,0 +1,74 @@
+/* responsive  */
+/* laptop and desktop */
+/*Tablets and phones*/
+@media (max-width: 876px) {
+  .container {
+    max-width: 327px;
+    max-height: 512px;
+  }
+
+  .article__share-btn {
+    z-index: 1;
+    margin-top: 14px;
+  }
+
+  .article {
+    flex-direction: column;
+  }
+
+  .article__image {
+    max-height: 200px;
+  }
+
+  .article__photo {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+    max-height: 200px;
+  }
+
+  .article__content {
+    padding: 36px 32px 20px 31px;
+  }
+
+  .article__title {
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+  }
+
+  .article__body {
+    margin-bottom: 32px;
+  }
+
+  .article__writer {
+    gap: 23px;
+  }
+
+  .article__share-links {
+    right: 0px;
+    top: 432px;
+    padding: 22px 120px 22px 32px;
+    border-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 64px;
+    width: 327px;
+    justify-content: space-between;
+  }
+
+  .article__share-links::after {
+    display: none;
+  }
+}
+
+/* Explicit case for 320px - 327px */
+@media (min-width: 320px) and (max-width: 327px) {
+  .container {
+    max-width: 320px;
+    max-height: 512px;
+  }
+
+  .article__share-links {
+    top: 450px;
+  }
+}

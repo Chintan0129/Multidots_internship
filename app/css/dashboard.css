@@ -1,0 +1,51 @@
+body {
+  background-image: url("../star.jpg");
+  background-size: cover;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  text-align: center;
+  color: rgb(244, 98, 0);
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.main img {
+  width: 450px;
+  height: 450px;
+}
+form {
+  display: inline-block;
+}
+li {
+  font-size: 24px;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+button,
+input {
+  width: 100px;
+  height: 60px;
+  font-size: 20px;
+  background-color: rgb(255, 132, 83);
+  color: white;
+  margin: 40px;
+  border-radius: 20px;
+}
+button:hover {
+  background-color: grey;
+  color: white;
+  box-shadow: 5px 5px 5px rgb(255, 255, 255);
+}
+input[type="submit"]:hover {
+  background-color: grey;
+  color: white;
+  box-shadow: 5px 5px 5px rgb(255, 255, 255);
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Registartion-Form|Chintan Shah</title>
+	<link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+	<header>
+		<h1>Registration Form</h1>
+	</header>
+	<main>
+		<div class="form__container">
+			<form id="myForm">
+				<table>
+					<tr>
+						<td><label for="username">Username:</label></td>
+						<td>
+							<input type="text" id="username" name="username"  placeholder="your name" required />
+							<p id="usernameError" class="error"></p>
+						</td>
+					</tr>
+
+					<tr>
+						<td><label for="email">email:</label></td>
+						<td>
+							<input type="text" id="email" name="email" placeholder="your email" required />
+							<p id="emailError" class="error"></p>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="password">Password:</label></td>
+						<td>
+							<input type="password" id="password" name="password" required />
+							<p id="passwordError" class="error"></p>
+						</td>
+					</tr>
+
+					<tr>
+						<td><label for="phonenum">Phone number:</label></td>
+						<td>
+							<input type="tel" id="phonenum" name="phonenum" required />
+							<p id="phoneNumError" class="error"></p>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="gender">Gender:</label></td>
+						<td>
+							<label for="male">Male:</label><input type="radio" id="male" name="gender" value="Male"  checked/>
+							<label for="female">Female:</label><input type="radio" id="female" name="gender" value="female" />
+							<label for="others">others:</label><input type="radio" id="others" name="gender" value="others" />
+							<p id="genderError" class="error"></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="language">language:</label>
+						</td>
+						</td>
+						<td><select name="language">
+							<option value="selectlanguage">Select language</option>
+							<option value="hindi">Hindi</option>
+							<option value="french">English</option>
+							<option value="gujrati">Gujrati</option></select>
+							<p id="languageError" class="error"></p>
+						</td>
+
+					</tr>
+					<tr>
+						<td><label for="zipcode">Zipcode:</label></td>
+						<td><input type="text" id="zipcode" name="zipcode" required />
+							<p id="zipCodeError" class="error"></p></td>
+					</tr>
+					<tr>
+						<td><label for="about">About Us:</label></td>
+						<td><textarea name="about" id="about" cols="20" rows="3" placeholder="write something"></textarea>
+							<p id="aboutUsError" class="error"></p></td>
+					</tr>
+					<tr >
+						<td colspan="2" ><button><input type="submit" value="Register now" /></button></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</main>
+</body>
+<script src="./js/index.js"></script>
+
+</html>

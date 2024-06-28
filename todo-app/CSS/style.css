@@ -1,0 +1,233 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d2d3db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+body .main {
+  width: 50%;
+  margin-top: 12%;
+}
+
+body .bg {
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+body.theme {
+  background-color: #1e1f2a;
+}
+body .main .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fafafa;
+}
+
+body .main .header h1 {
+  letter-spacing: 10px;
+}
+
+body .main .add-task {
+  background-color: #fafafa;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  border-radius: 6px;
+  padding: 0 20px;
+  margin: 2.3rem 0 1.2rem 0;
+  align-items: center;
+}
+body .main .add-task .check {
+  border: 2px solid #d2d3db;
+  width: 26px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+body.theme .main .add-task {
+  background-color: #292b3d;
+}
+
+body.theme .main .add-task .check {
+  border: 2px solid #595c71;
+}
+
+body .main .add-task input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  background: transparent;
+  color: #292b3d;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  line-height: auto;
+}
+body.theme .main .add-task input {
+  color: #d4d7ee;
+}
+body .main .add-task.error {
+  border: 1px solid #de5757;
+  background-color: #ef9191;
+}
+body .main .add-task input.error {
+  color: #ef9191;
+}
+body .main .add-task input::placeholder {
+  font-family: "Times New Roman", Times, serif;
+  color: #777a92;
+}
+
+body .main .body-task {
+  background-color: #fafafa;
+  border-radius: 4px;
+  box-shadow: -8px 16px 24px hsl(236, 9%, 61% / 20%),
+    8px 16px 24px hsl(236, 9%, 61% / 20%), 0 12px 24px hsla(237, 9%, 61%, 0.2);
+}
+body.theme .main .body-task {
+  background-color: #292b3d;
+}
+
+body .main .body-task .task-container,
+body .main .body-task .task-footer {
+  padding: 0 20px;
+}
+
+body .main .body-task .task-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 52px;
+  border-bottom: 1px solid #d2d3db;
+  cursor: pointer;
+}
+body.theme .main .body-task .task-container {
+  border-bottom: 1px solid #595c71;
+}
+
+body .main .body-task .task-container .check {
+  border: 2px solid #d2d3db;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 12px;
+  padding: 2px 6px;
+}
+body.theme .main .body-task .task-container .check {
+  border: 2px solid #595c71;
+}
+
+body .main .body-task .task-container .check.completed {
+  background-image: #8bdcf0;
+  border: none;
+  text-decoration: line-through;
+}
+.check img {
+  display: none;
+}
+.check.completed img {
+  display: block;
+}
+
+body .main .body-task .task-container p {
+  color: #292b3d;
+  font-size: 18px;
+  font-weight: 400;
+}
+body.theme .main .body-task .task-container p {
+  color: #d4d7ee;
+}
+body .main .body-task .task-container.completed p {
+  color: #9394a5;
+  text-decoration: line-through;
+}
+.collapse {
+  height: 0;
+  transition: ease 0.3s;
+}
+body .main .body-task .task-container .cross {
+  margin-left: auto;
+  width: 18px;
+  height: 18px;
+}
+.check img,
+.cross img {
+  pointer-events: none;
+  object-fit: scale-down;
+  width: 100%;
+  height: 100%;
+}
+
+body .main .body-task .task-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  color: #9394a5;
+}
+body.theme .main .body-task .task-footer {
+  color: #484b6a;
+}
+
+body .main .header .theme-icon,
+body .main .add-task .check,
+body .main .body-task .task-container .cross,
+body .main .body-task .task-container .check,
+body .main .body-task .task-footer .clear-completed,
+body .main .body-task .task-footer .container {
+  cursor: pointer;
+}
+body .main .body-task .task-footer .container {
+  display: flex;
+  align-items: center;
+  height: 52px;
+  gap: 1.4rem;
+}
+body .main .body-task .task-footer .container p:first-child {
+  color: #6a6ae4;
+}
+.currentColor {
+  color: #6a6ae4;
+}
+body .main .body-task .task-footer .container p:hover,
+body .main .body-task .task-footer .clear-completed:hover {
+  color: #484b6a;
+}
+body.theme .main .body-task .task-footer .container p:hover,
+body.theme .main .body-task .task-footer .clear-completed:hover {
+  color: #e4e5f1;
+}
+
+body .main .drag-drop {
+  color: #9394a5;
+  text-align: center;
+  margin-top: 4.5rem;
+}
+body.theme .main .drag-drop {
+  color: #484b6a;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: flex;
+}
+
+.dragging {
+  opacity: 0.2;
+}

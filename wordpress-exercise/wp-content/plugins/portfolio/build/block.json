@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/custom-portfolio",
+  "version": "0.1.0",
+  "title": "Portfolio",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Exercise.",
+  "example": {},
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "multiple": false
+  },
+  "textdomain": "portfolio",
+  "attributes": {
+    "selectedCategories": {
+      "type": "array",
+      "default": []
+    },
+    "selectedClients": {
+      "type": "array",
+      "default": []
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

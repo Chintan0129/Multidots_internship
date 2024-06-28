@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+
+    <script defer src="./script.js"></script>
+    <title>Article Preview Component</title>
+  </head>
+  <body>
+    <!-- Main starts here -->
+    <main class="main">
+      <div class="container">
+        <div class="article">
+          <!-- Article image starts here -->
+          <div class="article__image">
+            <img
+              class="article__photo"
+              src="./images/drawers.jpg"
+              alt="Drawers"
+            />
+          </div>
+          <!-- Article image ends here -->
+
+          <!-- Article content starts here -->
+          <div class="article__content">
+            <h1 class="article__title">
+              Shift the overall look and feel by adding these wonderful touches
+              to furniture in your home
+            </h1>
+            <p class="article__body">
+              Ever been in a room and felt like something was missing? Perhaps
+              it felt slightly bare and uninviting. I’ve got some simple tips to
+              help you make any room feel complete.
+            </p>
+            <div class="article__footer">
+              <div class="article__writer">
+                <img
+                  class="article__writer-photo"
+                  src="./images/avatar-michelle.jpg"
+                  alt="Writer's Photo"
+                />
+                <div class="article__writer-info">
+                  <h1 class="article__writer-name">Michelle Appleton</h1>
+                  <p class="article__date">28 Jun 2020</p>
+                </div>
+              </div>
+              <button onclick="validate()" class="article__share-btn">
+                <img
+                  class="article_share-image"
+                  src="./images/icon-share.svg"
+                  alt="Share Icon"
+                />
+              </button>
+              <div id="links" class="article__share-links">
+                <span class="article__share-text">Share</span>
+
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  class="article__share-links-item"
+                >
+                  <img src="./images/icon-facebook.svg" alt="facebook icon" />
+                </a>
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  class="article__share-links-item"
+                >
+                  <img src="./images/icon-twitter.svg" alt="twitter icon" />
+                </a>
+                <a
+                  href="https://pinterest.com"
+                  target="_blank"
+                  class="article__share-links-item"
+                >
+                  <img src="./images/icon-pinterest.svg" alt="pinterest icon" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Article content ends here -->
+        </div>
+      </div>
+    </main>
+    <!-- Main ends here -->
+  </body>
+</html>

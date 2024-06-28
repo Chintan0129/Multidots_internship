@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ligthbox-integration|Chintan</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header__title">
+        <h1>Image Gallery</h1>
+      </div>
+    </header>
+    <main>
+      <div class="gallery">
+        <div class="gallery__items">
+          <img
+            src="./assests/IMG1.jpg"
+            onclick="openLightbox();toSlide(1)"
+            class="gallery__items--hover-shadow gallery__items--preview"
+            alt="image"
+          />
+        </div>
+        <div class="gallery__items">
+          <img
+            src="assests/IMG2.jpg"
+            onclick="openLightbox();toSlide(2)"
+            class="gallery__items--hover-shadow gallery__items--preview"
+            alt="image"
+          />
+        </div>
+        <div class="gallery__items">
+          <img
+            src="assests/IMG3.jpg"
+            onclick="openLightbox();toSlide(3)"
+            class="gallery__items--hover-shadow gallery__items--preview"
+            alt="image"
+          />
+        </div>
+        <div class="gallery__items">
+          <img
+            src="assests/IMG4.jpg"
+            onclick="openLightbox();toSlide(4)"
+            class="gallery__items--hover-shadow gallery__items--preview"
+            alt="image"
+          />
+        </div>
+        <div class="gallery__items">
+          <img
+            src="assests/IMG5.jpg"
+            onclick="openLightbox();toSlide(5)"
+            class="gallery__items--hover-shadow gallery__items--preview"
+            alt="image"
+          />
+        </div>
+        <div class="gallery__items">
+          <img
+            src="assests/IMG6.jpg"
+            onclick="openLightbox();toSlide(6)"
+            class="gallery__items--hover-shadow gallery__items--preview"
+            alt="image"
+          />
+        </div>
+      </div>
+
+      <div id="Lightbox" class="modal">
+        <span class="close pointer" onclick="closeLightbox()">&times;</span>
+        <div class="modal-content">
+          <div class="slide">
+            <img src="./assests/IMG1.jpg" class="image-slide" alt="image" />
+          </div>
+          <div class="slide">
+            <img src="./assests/IMG2.jpg" class="image-slide" alt="image" />
+          </div>
+          <div class="slide">
+            <img src="./assests/IMG3.jpg" class="image-slide" alt="image" />
+          </div>
+          <div class="slide">
+            <img src="./assests/IMG4.jpg" class="image-slide" alt="image" />
+          </div>
+          <div class="slide">
+            <img src="./assests/IMG5.jpg" class="image-slide" alt="image" />
+          </div>
+          <div class="slide">
+            <img src="./assests/IMG6.jpg" class="image-slide" alt="image" />
+          </div>
+
+          <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+          <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="./script/index.js"></script>
+</html>

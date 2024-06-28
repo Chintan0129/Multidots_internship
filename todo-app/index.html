@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TodolistAPP</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/responsive.css" />
+  </head>
+  <body>
+    <div class="background">
+      <img src="assests/background.jpg" class="bg" style="height: 40%" />
+    </div>
+
+    <div class="main">
+      <div class="header">
+        <h1>TODO</h1>
+        <div class="theme-icon">
+          <img src="assests/theme_icon.svg" alt="" />
+        </div>
+      </div>
+      <div class="add-task">
+        <div class="check">
+          <img src="assests/icon-check.svg" alt="" />
+        </div>
+        <input type="text" placeholder="Create a new todo" />
+      </div>
+      <div class="body-task">
+        <div class="tasks"></div>
+
+        <div class="task-footer">
+          <p class="items-counter">0 items left</p>
+          <div class="container">
+            <p id="all">All</p>
+            <p id="active">Active</p>
+            <p id="completed">Completed</p>
+          </div>
+          <p class="clear-completed">Clear Completed</p>
+        </div>
+      </div>
+
+      <p class="drag-drop">Drag and drop to reorder list</p>
+    </div>
+  </body>
+  <script src="./JS/index.js"></script>
+</html>

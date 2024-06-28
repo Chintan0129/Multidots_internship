@@ -1,0 +1,162 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+:root {
+  --dark-gray: #333;
+  --white: #fff;
+  --black: #000;
+  --lightgray: #ccc;
+  --yellow: #ff0;
+  --red: #ff0000;
+  --green: #00ff00;
+  --blue: #0000ff;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: hsl(185, 75%, 39%);
+  background-image: url("./images/bg-pattern-top.svg"),
+    url("./images/bg-pattern-bottom.svg");
+  /* background-size: 500px 500px, 500px 500px; */
+  background-position: left -280px top -580px, right -250px bottom -650px;
+  background-repeat: no-repeat, no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  /* border: 1px solid var(--lightgray); */
+  height: 374px;
+  width: 350px;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  flex-direction: column;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 4px 8px 40px -10px var(--very-dark-desaturated-blue);
+}
+
+.container-img {
+  border-radius: 15px 15px 0px 0px;
+  background: url(images/bg-pattern-card.svg) no-repeat;
+  background-size: cover;
+  height: 140px;
+  width: 100%;
+  position: relative;
+}
+
+.container-img img {
+  border-radius: 50%;
+  border: 5px solid var(--white);
+  position: absolute;
+  left: 37%;
+  bottom: -40%;
+  z-index: 99;
+  width: 96px;
+  height: 96px;
+}
+
+.container-profile-data {
+  flex: 2.3;
+  background: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-profile-data .name {
+  margin-top: 40px;
+}
+.container-profile-data p {
+  padding: 0;
+  margin: 0;
+}
+
+.stats {
+  border-top: 1px solid var(--lightgray);
+  border-radius: 0px 0px 15px 15px;
+  flex: 1;
+  background: var(--white);
+}
+
+ul.user-count {
+  /* margin: 0; */
+  padding: 0;
+
+  list-style: none;
+  /* border: 1px solid red; */
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.stats ul.user-count li {
+  /* border: 1px solid red; */
+  display: inline;
+}
+
+.followers,
+.likes,
+.photos {
+  position: relative;
+  font-weight: 700;
+}
+
+.followers::before {
+  content: "Followers";
+  position: absolute;
+  top: 100%;
+  left: -10px;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--lightgray);
+}
+
+.likes::before {
+  content: "Likes";
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--lightgray);
+}
+
+.photos::before {
+  content: "Photos";
+  position: absolute;
+  top: 100%;
+  left: -3px;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--lightgray);
+}

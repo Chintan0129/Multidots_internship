@@ -1,0 +1,141 @@
+@media only screen and (max-width: 769px) {
+  body {
+    padding: 10px;
+    overflow: scroll;
+  }
+  header h1 {
+    font-size: 15px;
+  }
+
+  #container {
+    padding: 20px;
+  }
+
+  #drag__number-slots,
+  #drop__number-slots {
+    margin: 30px auto;
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #drag__number-slots div,
+  #drop__number-slots div {
+    font-size: 16px;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+  }
+
+  #winMsg {
+    padding: 30px;
+    margin: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    top: 50%;
+    z-index: 1000;
+  }
+  #lossMsg {
+    padding: 30px;
+    margin: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    top: 50%;
+    z-index: 1000;
+  }
+  #score {
+    font-size: 16px;
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  #time {
+    font-size: 15px;
+    position: relative;
+    left: 0px;
+    width: 200px;
+    top: 50px;
+    margin: auto;
+    text-align: center;
+  }
+}
+/* Media Queries for Tablet  */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  header h1 {
+    font-size: 36px;
+  }
+
+  #container {
+    padding: 40px;
+  }
+
+  #drag__number-slots,
+  #drop__number-slots {
+    margin: 10px auto;
+    width: 600px;
+    height: 200px;
+    padding: 10px;
+  }
+
+  #drag__number-slots div,
+  #drop__number-slots div {
+    font-size: 20px;
+    width: 50px;
+    height: 40px;
+    margin: 10px;
+  }
+
+  #winMsg {
+    padding: 50px;
+    margin: 40px;
+    font-size: 24px;
+    width: 80%;
+    max-width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #score {
+    font-size: 28px;
+    width: 80%;
+    max-width: 500px;
+    margin: 40px auto;
+    text-align: center;
+  }
+  #time {
+    font-size: 15px;
+    position: relative;
+    left: 0px;
+    width: 200px;
+    top: 50px;
+    margin: auto;
+    text-align: center;
+  }
+  #lossMsg {
+    padding: 50px;
+    margin: 40px;
+    font-size: 24px;
+    width: 80%;
+    max-width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

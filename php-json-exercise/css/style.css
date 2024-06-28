@@ -1,0 +1,18 @@
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 100px auto;
+}
+th,
+td {
+  border: 1px solid rgb(10, 10, 10);
+  padding: 8px;
+  text-align: center;
+}
+th,
+tr {
+  background-color: rgb(130, 233, 233);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  font-weight: 700;
+}

@@ -1,0 +1,26 @@
+.faq-item {
+	margin-bottom: 20px;
+}
+
+.faq-question {
+	display: flex;
+	align-items: center;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: larger;
+	font-weight: 900;
+}
+
+.faq-answer {
+	display: none;
+	font-weight: 700;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+.toggle-answer {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 20px;
+	margin-left: 10px;
+}

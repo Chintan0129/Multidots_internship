@@ -1,0 +1,218 @@
+body {
+  background-image: var(--bg-mobile);
+
+  @media screen and (min-width: 600px) {
+    background-image: var(--bg-tablet);
+
+    .container {
+      width: min(83.3333%, 64rem);
+    }
+
+    .quoteBlock__content {
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+    }
+
+    .quoteBlock--wrapper {
+      width: min(100%, 57.3rem);
+      margin-top: 8rem;
+    }
+
+    .quoteBlock__author {
+      margin-top: 1.3rem;
+    }
+
+    .refresh {
+      margin-top: 0.9rem;
+    }
+
+    .greetingBlock,
+    .location {
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+      letter-spacing: 3.6px;
+    }
+
+    .extra-text {
+      display: inline;
+    }
+
+    .time {
+      font-size: 17.5rem;
+      line-height: 17.5rem;
+      letter-spacing: -4.375px;
+      margin: 0;
+    }
+
+    .timeBlock__abbreviation {
+      margin-left: 1.1rem;
+      font-size: 3.2rem;
+      line-height: 3.2rem;
+    }
+
+    .expand-content {
+      margin-top: 8rem;
+      margin-bottom: 6.4rem;
+      width: 14.6rem;
+      height: 7.6rem;
+      padding: 0.8rem 0.9rem 0.8rem 2.1rem;
+    }
+
+    .expand-text {
+      font-size: 1.6rem;
+      line-height: 2.8rem;
+      letter-spacing: 5px;
+    }
+
+    .expand-icon-wrapper {
+      width: 4rem;
+      height: 4rem;
+    }
+
+    .less-time-info {
+      margin-top: 15.3rem;
+    }
+
+    .detailsBlock {
+      height: calc(100vh - 58.4rem);
+      padding-top: 11.9rem;
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 6.4rem;
+        row-gap: 4.8rem;
+      }
+
+      &__item {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        font-size: 1.3rem;
+        letter-spacing: 2.6px;
+        margin-bottom: 0;
+      }
+
+      &__result {
+        font-size: 4rem;
+        line-height: 4.8rem;
+        text-align: left;
+        font-weight: 700;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    background-image: var(--bg-desktop);
+
+    .quoteBlock--wrapper {
+      margin-top: 5.6rem;
+    }
+
+    .container {
+      width: min(77.08333%, 111rem);
+    }
+
+    .refresh {
+      margin-top: 1rem;
+    }
+
+    .timeBlock--wrapper {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 9.8rem;
+    }
+
+    .greetingBlock {
+      font-size: 2rem;
+      letter-spacing: 4px;
+    }
+
+    .time {
+      font-size: 20rem;
+      line-height: 20rem;
+      letter-spacing: -5px;
+      margin-top: 1.6rem;
+      margin-bottom: 1.6rem;
+    }
+
+    .timeBlock__abbreviation {
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+
+    .location {
+      font-size: 2.4rem;
+      line-height: 2.8rem;
+      letter-spacing: 4.8px;
+    }
+
+    .expand-content {
+      margin: 0;
+    }
+
+    .expand-content:hover {
+      cursor: pointer;
+
+      .expand-icon-wrapper {
+        background-color: #999999;
+        transition: 0.5s;
+      }
+    }
+
+    .expand-icon-wrapper {
+      transition: 0.5s;
+    }
+
+    .refresh:hover {
+      cursor: pointer;
+
+      .refresh-icon {
+        opacity: 1;
+        transition: 0.5s;
+      }
+    }
+
+    .refresh-icon {
+      transition: 0.5s;
+    }
+
+    .less-time-info {
+      margin-top: 5.6rem;
+      margin-bottom: 5.6rem;
+    }
+
+    .detailsBlock {
+      height: calc(100vh - 40rem);
+      padding-top: 7.4rem;
+
+      .container {
+        column-gap: 4.7rem;
+        row-gap: 0;
+      }
+
+      &__item {
+        gap: 0.9rem;
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+
+        &:nth-child(even) {
+          padding-left: 9.4rem;
+          border-left: 1px solid #30303040;
+        }
+
+        &:nth-child(1),
+        &:nth-child(2) {
+          padding-bottom: 4.2rem;
+        }
+      }
+
+      &__result {
+        font-size: 5.6rem;
+        line-height: 5.6rem;
+        font-weight: 700;
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock-App|Chintan Shah</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body class="sun">
+    <main id="mainContainer" class="main">
+      <div class="container">
+        <div id="quoteBlock" class="quoteBlock--wrapper">
+          <div>
+            <p class="quoteBlock__content quoteBlock__text">
+              "<span id="quoteContent"></span>"
+            </p>
+            <span
+              id="quoteAuthor"
+              class="quoteBlock__content quoteBlock__author"
+            ></span>
+          </div>
+          <button id="newQuoteBtn" class="refresh">
+            <span class="visually-hidden">Get new quote</span>
+            <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.188 10.667a.208.208 0 01.147.355l-2.344 2.206a5.826 5.826 0 009.578-2.488l2.387.746A8.322 8.322 0 013.17 14.94l-2.149 2.022a.208.208 0 01-.355-.148v-6.148h6.52zm7.617-7.63L16.978.958a.208.208 0 01.355.146v6.23h-6.498a.208.208 0 01-.147-.356L13 4.765A5.825 5.825 0 003.43 7.26l-2.386-.746a8.32 8.32 0 0113.76-3.477z"
+                fill="#FFF"
+                fill-rule="nonzero"
+                class="refresh-icon"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <div id="timeBlock" class="timeBlock--wrapper">
+          <h1>
+            <span class="greetingBlock"
+              ><img
+                src="assets/desktop/icon-sun.svg"
+                alt=""
+                class="time-icon"
+                id="timeIcon"
+              /><span id="greetingText" class="greetingBlock__text"></span
+              ><span class="extra-text">, it's currently</span></span
+            >
+            <span id="currentTime" class="time">--:--</span>
+            <span id="timeAbbreviation" class="timeBlock__abbreviation"></span>
+            <span class="location">in <span id="userLoc"></span></span>
+          </h1>
+          <button id="expandButton" class="expand-content">
+            <span id="expandButtonText" class="expand-text">More</span>
+            <span class="expand-icon-wrapper"
+              ><img
+                src="assets/desktop/icon-arrow-down.svg"
+                alt=""
+                id="expandButtonIcon"
+                class="expand-icon"
+            /></span>
+          </button>
+        </div>
+      </div>
+      <div id="moreDetails" class="detailsBlock show-less-info">
+        <div class="container">
+          <p class="detailsBlock__item">
+            <span>Current timezone</span>
+            <span id="currentTimezone" class="detailsBlock__result"></span>
+          </p>
+          <p class="detailsBlock__item">
+            <span>Day of the week</span
+            ><span id="dayOfTheWeek" class="detailsBlock__result"></span>
+          </p>
+          <p class="detailsBlock__item">
+            <span>Day of the year</span>
+            <span id="dayOfTheYear" class="detailsBlock__result"></span>
+          </p>
+
+          <p class="detailsBlock__item">
+            <span>Week number</span
+            ><span id="weekNumber" class="detailsBlock__result"></span>
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

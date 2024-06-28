@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator|Chintan Shah</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="header">
+        <div class="header__color-options">
+          <h1>Calc</h1>
+          <h2>Theme</h2>
+          <input
+            type="radio"
+            id="givencolor"
+            name="color"
+            value="#3b4664"
+            onclick="changeColor()"
+            checked
+          />
+
+          <input
+            type="radio"
+            id="green"
+            name="color"
+            value="green"
+            onclick="changeColor()"
+          />
+          <input
+            type="radio"
+            id="blue"
+            name="color"
+            value="blue"
+            onclick="changeColor()"
+          />
+        </div>
+      </div>
+    </header>
+    <div class="screen">
+      <form action="">
+        <input
+          type="text"
+          class="display"
+          id="display"
+          placeholder="399,981"
+          readonly
+        />
+      </form>
+    </div>
+    <div class="calculator">
+      <div class="numpad">
+        <button onclick="appendNumber('7')">7</button>
+        <button onclick="appendNumber('8')">8</button>
+        <button onclick="appendNumber('9')">9</button>
+        <button id="del" onclick="backspace()">DEL</button>
+        <button onclick="appendNumber('4')">4</button>
+        <button onclick="appendNumber('5')">5</button>
+        <button onclick="appendNumber('6')">6</button>
+        <button onclick="appendOperator('+')">+</button>
+        <button onclick="appendNumber('1')">1</button>
+        <button onclick="appendNumber('2')">2</button>
+        <button onclick="appendNumber('3')">3</button>
+        <button onclick="appendOperator('-')">-</button>
+        <button onclick="appendNumber('.')">.</button>
+        <button onclick="appendNumber('0')">0</button>
+        <button onclick="appendOperator('/')">/</button>
+        <button onclick="appendOperator('*')">X</button>
+        <button id="reset" onclick="clearDisplay()">RESET</button>
+        <button id="equal" onclick="calculate()">=</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

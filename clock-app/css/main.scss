@@ -1,0 +1,284 @@
+// Define variables for fonts
+$font-inter-light: "./font/Inter-Light.ttf";
+$font-inter-regular: "./font/Inter-Regular.ttf";
+$font-inter-bold: "./font/Inter-Bold.ttf";
+
+// Define variables for colors
+$color-info-text-sun: #303030;
+$color-info-bg-sun: #ffffffbf;
+$color-info-text-moon: #fff;
+$color-info-bg-moon: #000000bf;
+
+// Define variables for image paths
+$image-bg-mobile-sun: "../assets/mobile/bg-image-daytime.jpg";
+$image-bg-tablet-sun: "../assets/tablet/bg-image-daytime.jpg";
+$image-bg-desktop-sun: "../assets/desktop/bg-image-daytime.jpg";
+$image-bg-mobile-moon: "../assets/mobile/bg-image-nighttime.jpg";
+$image-bg-tablet-moon: "../assets/tablet/bg-image-nighttime.jpg";
+$image-bg-desktop-moon: "../assets/desktop/bg-image-nighttime.jpg";
+
+// Rest of the SCSS code
+@font-face {
+  font-family: "inter";
+  src: url($font-inter-light);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url($font-inter-regular);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url($font-inter-bold);
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.sun {
+  --bg-mobile: url("#{$image-bg-mobile-sun}");
+  --bg-tablet: url("#{$image-bg-tablet-sun}");
+  --bg-desktop: url("#{$image-bg-desktop-sun}");
+  --info-text: #{$color-info-text-sun};
+  --info-bg: #{$color-info-bg-sun};
+}
+
+.moon {
+  --bg-mobile: url("#{$image-bg-mobile-moon}");
+  --bg-tablet: url("#{$image-bg-tablet-moon}");
+  --bg-desktop: url("#{$image-bg-desktop-moon}");
+  --info-text: #{$color-info-text-moon};
+  --info-bg: #{$color-info-bg-moon};
+}
+
+body {
+  font-family: "inter", sans-serif;
+  background-image: var(--bg-mobile);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: 400;
+  color: #fff;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-color: #00000066;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+img {
+  display: block;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* Main */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  position: relative;
+  z-index: 100;
+}
+
+.container {
+  width: min(86.4%, 32.4rem);
+  margin: 0 auto;
+}
+
+.quoteBlock--wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.6rem;
+  margin-top: 3.167rem;
+}
+
+.quoteBlock__content {
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+}
+
+.quoteBlock__author {
+  display: inline-block;
+  font-weight: 700;
+  margin-top: 0.8rem;
+}
+
+.refresh {
+  width: min(100%, 1.667rem);
+}
+
+.refresh-icon {
+  opacity: 0.5;
+}
+
+.timeBlock--wrapper,
+.detailsBlock .container {
+  margin: 0 auto;
+}
+
+.time-icon {
+  display: inline-block;
+  margin-right: 1.6rem;
+}
+
+.greetingBlock {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.extra-text {
+  display: none;
+}
+
+.time {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 10rem;
+  line-height: 10rem;
+  letter-spacing: -2.5px;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.timeBlock__abbreviation {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+  text-transform: uppercase;
+}
+
+.location {
+  display: block;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.expand-content {
+  background-color: #fff;
+  margin-top: 4.8rem;
+  margin-bottom: 4rem;
+  width: 11.5rem;
+  height: 3.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3rem 0.4rem 0.3rem 1.7rem;
+  border-radius: 28px;
+}
+
+.expand-text {
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  letter-spacing: 3.75px;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.expand-icon-wrapper {
+  width: 3.2rem;
+  height: 3.2rem;
+  background-color: #303030;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.show-less-info {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(100%);
+  transition: 0.5s;
+}
+
+.less-info {
+  justify-content: flex-start;
+}
+
+.less-time-info {
+  margin-top: 9.9rem;
+}
+
+.detailsBlock {
+  height: calc(100vh - 41.1rem);
+  background-color: var(--info-bg);
+  -webkit-backdrop-filter: blur(40.7742px);
+  backdrop-filter: blur(40.7742px);
+  padding-top: 4.8rem;
+  transition: 0.5s;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    line-height: 2.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--info-text);
+    margin-bottom: 1.6rem;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &__result {
+      text-transform: none;
+      font-size: 2rem;
+      line-height: 2.4rem;
+      text-align: right;
+      font-weight: 700;
+    }
+  }
+}
